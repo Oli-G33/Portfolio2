@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "2021",
+    title: "Web Development Bootcamp",
+    company: "Ironhack",
+    description:
+      "Completed a 6-month hands-on bootcamp with one of the world's largest coding schools, gaining a solid foundation in HTML, CSS, and JavaScript. Developed impressive projects utilizing the latest technologies such as React.js and Node.js, with a focus on creating modern, responsive websites.",
+    
+  },
+  {
+    date: "2023",
+    title: "DevOps Engineer Bootcamp",
+    company: "Simplilearn",
+    description:
+      "Online DevOps Engineer Course developed in collaboration with IBM. This comprehensive program combined live virtual classes, interactive labs, and hands-on projects, covering essential tools and methodologies such as Docker, Kubernetes, and Jenkins. Gained practical experience in automation, continuous integration, and deployment, culminating in capstone projects across multiple domains.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

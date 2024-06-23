@@ -1,7 +1,14 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
-const EXPERIENCIE = [
+const EXPERIENCE = [
   {
+    date: "2022-2023",
+    title: "Junior Developer Internship",
+    company: "Idealista",
+    description: "During my apprenticeship at Idealista from June 2022 to March 2023, I developed and maintained various web applications for Spain's leading Real Estate platform. My role included working on front and back-end services with Node.js and Express, and managing databases with MongoDB. Furthermore, I actively participated in team meetings, contributed to planning and design discussions, and created and maintained documentation for code and software processes to support future development.",
+    
+  },
+/*   {
     date: "2021",
     title: "Web Development Bootcamp",
     company: "Ironhack",
@@ -15,15 +22,15 @@ const EXPERIENCIE = [
     company: "Simplilearn",
     description:
       "Online DevOps Engineer Course developed in collaboration with IBM. This comprehensive program combined live virtual classes, interactive labs, and hands-on projects, covering essential tools and methodologies such as Docker, Kubernetes, and Jenkins. Gained practical experience in automation, continuous integration, and deployment, culminating in capstone projects across multiple domains.",
-  },
+  }, */
 ]
 ---
 
 <ol class="relative mt-16">
   {
-    EXPERIENCIE.map((experiencie) => (
-      <li class="">
-        <ExperienceItem {...experiencie} />
+    EXPERIENCE.map((experience) => (
+      <li >
+        <ExperienceItem {...experience} />
       </li>
     ))
   }
